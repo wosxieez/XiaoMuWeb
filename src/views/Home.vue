@@ -60,7 +60,7 @@ export default {
         this.$Message.warning("密码不能为空")
         return
       } else {
-        this.axios.post('xiaomu/register', {
+        this.axios.post('http://www.hefeixiaomu.com:3000/xiaomu/register', {
           username: this.usernameValue,
           password: this.passwordValue
         }).then(response => {
